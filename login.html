@@ -17,35 +17,34 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img src="/images/MarkupTag-white-logo.png" alt="Logo" class="img-fluid" /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Profile</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Device</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Forum</a>
-            </li>
-          </ul>
-          <div class="d-inline">
-            <button class="btn btn-light ms-3">Login</button>
-            <button class="btn btn-light ms-3">Register</button>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="Logo" class="img" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mob-navbar" aria-label="Toggle">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mob-navbar">
+                <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Device</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Forum</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-warning" type="submit">Login</button>
+                </form>
+            </div>
         </div>
-      </div>
     </nav>
-  </header>
+</header>
   <div class="container-fluid">
     <div class="row">
       <div class="col-6 pt-5 text-center bg-secondary">
@@ -81,24 +80,24 @@
           <button type="button" class=" btn btn-secondary col-8">Email</button>
         </div>
         <div class="pt-5 container-fluid">
-          <p>-------------------------------------- OR --------------------------------------</p>
+          <p>-----------------------------        OR        ------------------------------</p>
         </div>
           <form>
-            <div class="container">
-              <div class="text-left mb-3 mt-3">
-                <label for="username" class="form-label">Username</label>
-                <input type="username" class="form-control col-6" id="username" placeholder="" name="username">
-              </div>
-              <div class="text-left mb-3 mt-3">
-                <label for="password" class="form-label">Password:</label>
-                <input type="password" class="form-control col-6" id="password" placeholder="" name="password">
-              </div>
+            <div class="text-left mb-3 mt-3">
+              <label for="username" class="form-label col-4">Username</label>
+              <input type="username" class="form-control" id="username" placeholder="" name="username">
+            </div>
+            <div class="text-left mb-3 mt-3">
+              <label for="password" class="form-label col-4">Password:</label>
+              <input type="password" class="form-control" id="password" placeholder="" name="password">
             </div>
             <div class="row">
               <div class="col-6">
                 <div class="form-check mb-3">
                   <input class="form-check-input" type="checkbox" id="myCheck"  name="remember" required>
                   <label class="form-check-label" for="myCheck">Remember Me</label>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Check this checkbox to continue.</div>
                 </div>
               </div>
               <div class="col-6">

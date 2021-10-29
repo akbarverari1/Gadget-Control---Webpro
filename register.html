@@ -17,35 +17,34 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img src="/images/MarkupTag-white-logo.png" alt="Logo" class="img-fluid" /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Profile</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Device</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Forum</a>
-            </li>
-          </ul>
-          <div class="d-inline">
-            <button class="btn btn-light ms-3">Login</button>
-            <button class="btn btn-light ms-3">Register</button>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="Logo" class="img" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mob-navbar" aria-label="Toggle">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mob-navbar">
+                <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Device</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Forum</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-warning" type="submit">Login</button>
+                </form>
+            </div>
         </div>
-      </div>
     </nav>
-  </header>
+</header>
   <div class="container-fluid">
     <div class="row">
       <div class="col-6 pt-5 text-center bg-secondary">
@@ -72,49 +71,49 @@
 
       <div class="col-6 text-center bg-white">
         <div class="container-fluid">
-        <h1 class="pt-5 Card-text font-weight-bold">Register To Shaumgram</h1>
-        <div class="col-9 container-fluid text-left">
-          <h4 class="pt-5 font-light">Welcome Back! Please<br>fill in your username and password below</h4>
-        </div>
-        <div class="pt-5 container-fluid">
-        <form>
-          <div class="pt-5 container">
-            <div class="text-left mb-3 mt-3">
-              <label for="username" class="form-label col-4">Username</label>
-              <input type="username" class="form-control bg-secondary" id="username" placeholder="" name="username">
-            </div>
+          <h1 class="pt-5 Card-text font-weight-bold">Register To Shaumgram</h1>
+          <div class="col-9 container-fluid text-left">
+            <h4 class="pt-5 font-light">Welcome Back! Please<br>fill in your username and password below</h4>
           </div>
-          <div class="container">
-            <div class="text-left mb-3 mt-3">
-              <label for="email" class="form-label col-4">Email</label>
-              <input type="email" class="form-control bg-secondary" id="email" placeholder="" name="email">
-            </div>
-          </div>
-          <div class="container">
-            <div class="text-left mb-3">
-              <label for="password" class="form-label col-4">Password</label>
-              <input type="password" class="form-control bg-secondary" id="password" placeholder="" name="password">
-            </div>
-          </div>
-          <div class="container">
-            <div class="text-left mb-3 mt-3">
-              <label for="confirm password" class="form-label col-4">Confirm Password</label>
-              <input type="confirm password" class="form-control bg-secondary" id="confirm password" placeholder="" name="confirm password">
-            </div>
-          </div>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-6 text-center">
-                <button type="button" class="btn btn-secondary col-6" name="button">Register</button>
+          <div class="pt-5 container-fluid">
+            <form>
+              <div class="pt-5 container">
+                <div class="text-left mb-3 mt-3">
+                  <label for="username" class="form-label col-4">Username</label>
+                  <input type="username" class="form-control bg-secondary" id="username" placeholder="" name="username">
+                </div>
               </div>
-              <div class="col-6 text-center">
-                <button type="button" class="btn btn-secondary col-6" name="button">Login</button>
+              <div class="container">
+                <div class="text-left mb-3 mt-3">
+                  <label for="email" class="form-label col-4">Email</label>
+                  <input type="email" class="form-control bg-secondary" id="email" placeholder="" name="email">
+                </div>
               </div>
-            </div>
+              <div class="container">
+                <div class="text-left mb-3">
+                  <label for="password" class="form-label col-4">Password</label>
+                  <input type="password" class="form-control bg-secondary" id="password" placeholder="" name="password">
+                </div>
+              </div>
+              <div class="container">
+                <div class="text-left mb-3 mt-3">
+                  <label for="confirm password" class="form-label col-4">Confirm Password</label>
+                  <input type="confirm password" class="form-control bg-secondary" id="confirm password" placeholder="" name="confirm password">
+                </div>
+              </div>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-6 text-center">
+                    <button type="button" class="btn btn-secondary col-6" name="button">Register</button>
+                  </div>
+                  <div class="col-6 text-center">
+                    <button type="button" class="btn btn-secondary col-6" name="button">Login</button>
+                  </div>
+                </div>
+              </div>
           </div>
+          </form>
         </div>
-        </form>
-      </div>
       </div>
     </div>
   </div>
