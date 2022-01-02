@@ -6,9 +6,8 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <img src="assets/shaungram/logo.png" class="img-fluid" >
                 </div>
-                <div class="sidebar-brand-text mx-3">Shaungram</div>
+                <div class="sidebar-brand-text mx-3">Shaumgram</div>
             </a>
-
             <!-- Divider -->
             <hr class="sidebar-divider ">
 
@@ -32,11 +31,11 @@
             <!-- SIAPKAN SUB-MENU SESUAI MENU -->
             <?php
             $menuId = $m['id'];
-            $querySubMenu = "SELECT * FROM `user_sub_menu` JOIN `user_menu` ON `user_sub_menu`.`menu_id` = `user_menu`.`id` 
-                    WHERE `user_sub_menu`.`menu_id` = $menuId 
+            $querySubMenu = "SELECT * FROM `user_sub_menu` JOIN `user_menu` ON `user_sub_menu`.`menu_id` = `user_menu`.`id`
+                    WHERE `user_sub_menu`.`menu_id` = $menuId
                     AND `user_sub_menu`.`is_active` = 1
                 ";
-            $submenu = $this->db->query($querySubMenu)->result_array();  
+            $submenu = $this->db->query($querySubMenu)->result_array();
             ?>
                 <?php foreach($submenu as $sm) :?>
                 <?php if ($title == $sm['title']) : ?>

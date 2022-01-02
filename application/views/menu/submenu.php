@@ -36,13 +36,13 @@
                                   <td><?= $sm['is_active']; ?></td>
                                   <td>
                                     <a href="" class="badge badge-success">edit</a>
-                                    <a href="" class="badge badge-danger">delete</a>  
+                                    <a href="" class="badge badge-danger">delete</a>
                                   </td>
                                 </tr>
                                 <?php $i++; ?>
                                 <?php endforeach; ?>
                               </tbody>
-                            </table>                            
+                            </table>
                         </div>
                     </div>
 

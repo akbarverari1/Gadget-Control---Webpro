@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Menu extends CI_Controller 
+class Menu extends CI_Controller
 {
 	public function index()
 	{
@@ -16,19 +16,19 @@ class Menu extends CI_Controller
 			$this->load->view('templates/sidebar',$data);
 			$this->load->view('templates/topbar',$data);
 			$this->load->view('menu/index',$data);
-			$this->load->view('templates/footer');			
+			$this->load->view('templates/footer');
 		} else{
 			$this->db->insert('user_menu', ['menu' => $this->input->post('menu')]);
 			$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">New menu added!</div>');
 			redirect('menu');
-		}	
+		}
 
 	}
 
 	public function submenu()
 	{
 		$data['title']= 'Submenu Management';
-		$data['user'] = $this->db->get_where('user', ['email' => 
+		$data['user'] = $this->db->get_where('user', ['email' =>
 		$this->session->userdata('email')])->row_array();
 		$this->load->model('Menu_model', 'menu');
 
